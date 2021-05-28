@@ -1,9 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
-  root: {
-    boxShadow: "4px 5px 10px grey"
-  },
+    customizeToolbar: {
+        minHeight: 120,
+        width: "100%",
+        marginBottom: "50px"
+    }
 });
 
 export { useStyles };

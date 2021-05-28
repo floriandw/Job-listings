@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useStyles } from '../styles/jobCard';
+import { useStyles } from '../../styles/jobCard';
 import { Card } from '@material-ui/core';
 import { CardContent, Typography } from '@material-ui/core';
 
@@ -10,7 +10,7 @@ const JobCard = () => {
     const classes = useStyles();
 
     return (
-        <Card>
+        <Card className={classes.root}>
             <CardContent>
                 <Typography>
                    job Place 
