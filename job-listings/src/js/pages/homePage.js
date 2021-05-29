@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Container, MuiThemeProvider, CssBaseline } from "@material-ui/core";
-import JobCard from "../components/card/jobCard";
+import JobCards from "../components/card/jobCards";
 import { theme } from "../../resources/theme";
 import Header from "../components/header/header";
 
@@ -12,9 +12,7 @@ const homePage = () => {
             <CssBaseline />
                 <Header />
                 <Container maxWidth="md">
-                    <JobCard />
-                    <JobCard />
-                    <JobCard />
+                    <JobCards />                  
                 </ Container>
         </MuiThemeProvider>
     )
