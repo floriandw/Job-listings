@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react';
+import React,{ useState } from 'react';
 
 import { useStyles } from '../../styles/jobCard';
 import { Card, Avatar, Divider, CardContent, Typography  } from '@material-ui/core';
@@ -20,25 +20,28 @@ const JobCard = (props) => {
 
     return (
         <>
-       <Avatar style={{position:"absolute", zIndex:"1", marginTop: "-18px",left: "46px"}} alt="Remy Sharp" src={job.logo} />
+       
         <Card className={`${classes.root} ${job.featured ? classes.featured : ""}`} >
+        <Avatar className={classes.avatar} alt="Remy Sharp" src={job.logo} />
             {console.log(job.logo)}
-            <CardContent style={{whiteSpace:'pre-wrap', marginTop: "15px"}}>
-                <Typography style={{float:"left",marginRight: "10px", marginBottom:"12px", fontFamily:"spartan",fontWeight: 700, color: "#5da5a4"}}>
-                   {job.company}
-                </Typography>
-                <Typography component={'span'}>
-                    {job.new ? <Tag name="NEW!" /> : ""}
-                    {job.featured ? <Tag name="FEATURED" /> : ""}
-                </Typography>
-                <Typography style={{marginBottom:"10px",color: "black", fontWeight: "bold",  width: "100%", clear: "both"}}>
-                   {job.position}
-                </Typography>
-                <Typography style={{marginBottom: "15px", color:"#7B8E8E"}}>
-                    {job.postedAt}  •  {job.contract}  •  {job.location}
-                </Typography>
+            <CardContent className={classes.content}>
+                <div className={classes.middle} >
+                    <Typography className={classes.company}>
+                    {job.company}
+                    </Typography>
+                    <Typography component={'span'}>
+                        {job.new ? <Tag name="NEW!" /> : ""}
+                        {job.featured ? <Tag name="FEATURED" /> : ""}
+                    </Typography>
+                    <Typography className={classes.position}>
+                    {job.position}
+                    </Typography>
+                    <Typography className={classes.extraInfo}>
+                        {job.postedAt}  •  {job.contract}  •  {job.location}
+                    </Typography>
+                </div>
                 <Divider  />
-                <Typography style={{marginTop: "15px", display: "block"}} component={'span'} >
+                <Typography className={classes.info} component={'span'} >
                     <InfoTags items={info}/>
                 </Typography>
             </CardContent>

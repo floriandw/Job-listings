@@ -11,7 +11,7 @@ const homePage = () => {
         <MuiThemeProvider theme={theme}>
             <CssBaseline />
                 <Header />
-                <Container maxWidth="md">
+                <Container style={{maxWidth: "1500px", minWidth: "400px"}}>
                     <JobCards />                  
                 </ Container>
         </MuiThemeProvider>
