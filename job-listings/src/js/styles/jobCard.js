@@ -83,6 +83,12 @@ const useStyles = makeStyles((themes) => ({
     marginBottom: "15px", 
     color:"#7B8E8E"
   },
+  divider: {
+    display: "none",
+    [theme.breakpoints.down('md')]: {
+      display: "block",
+    }
+  },
   info: {
     marginTop: "15px", 
     display: "block",

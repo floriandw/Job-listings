@@ -40,7 +40,7 @@ const JobCard = (props) => {
                         {job.postedAt}  •  {job.contract}  •  {job.location}
                     </Typography>
                 </div>
-                <Divider  />
+                <Divider className={classes.divider} />
                 <Typography className={classes.info} component={'span'} >
                     <InfoTags items={info}/>
                 </Typography>
