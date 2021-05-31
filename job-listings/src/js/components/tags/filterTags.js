@@ -18,18 +18,23 @@ const FilterTags = () => {
             
                 <Card elevation={0} className={classes.root}>
                     <FilterInfoTags items={filters}/>
-                    <Link alignItems="center"
+                    
+                    <Link container
+                    alignItems="center"
                             justify="center" component="button"
                         style={{ 
                             float:"right", 
                             alignContent:"center",
                             color: "#5da5a4",
-                            
+                            right: "30px",
+                            top: "27px",
+                            position:"absolute"
                         }}
                         onClick={() => {dispatch(clearFilterItems())}}
                     >
                         Clear
                     </Link>
+                    
                 </Card>
                 :
                 ""

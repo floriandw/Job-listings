@@ -6,6 +6,8 @@ import Tag from "../tags/tag";
 import InfoTags from "../tags/infoTags";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../store/actions/itemsActions";
+import img from "./images/shortly.svg"
+import convert from 'convert-svg-react'
 
 
 const JobCard = (props) => {
@@ -13,15 +15,26 @@ const JobCard = (props) => {
     const classes = useStyles();
     const [info] = useState([job.role, job.level, ...job.tools, ...job.languages]);
     const dispatch = useDispatch()
-
+    
+    
     useEffect(()=> {
         dispatch(addItem([job.role, job.level, ...job.tools, ...job.languages]))
+       
     }, []);
-   
+    //const img = "./images.shortly.svg"
+    console.log(job.logo);
+
+    
+
+    const logo = job.logo
+    
+    
+    
     return (
         <>
             <Card className={`${classes.root} ${job.featured ? classes.featured : ""}`} >
-            <Avatar className={classes.avatar} alt="Remy Sharp" src={job.logo} />
+            
+            <Avatar src="./images/manage.svg" className={classes.avatar} alt="Remy Sharp"  />
                 {console.log(job.logo)}
                 <CardContent className={classes.content}>
                     <div className={classes.middle} >

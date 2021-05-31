@@ -11,12 +11,10 @@ const JobCards = () => {
     return (
         <>
             {data.map((job, index) => {
-                console.log(filters)
-                console.log(items[index])
                 return (
                     <>                  
                         {filters.length === 0 || filters.some(x => items[index].includes(x)) ?
-                            <JobCard key={job.id} job={job} />
+                            <JobCard key={job.id} job={job} index={index} />
                             :
                             ""
                         }
