@@ -7,7 +7,6 @@ import Header from "../components/header/header";
 import FilterTags from '../components/tags/filterTags';
 
 const homePage = () => {
-
     return (
         <MuiThemeProvider theme={theme}>
             <CssBaseline />

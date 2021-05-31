@@ -11,7 +11,6 @@ export const addFilterItem = (name) => {
 export const clearFilterItems = () => {
     return {
         type: actionTypes.CLEAR_FILTERS
-        
     }
 }
 

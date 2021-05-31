@@ -10,8 +10,7 @@ const JobCards = () => {
                 return (
                     <JobCard key={job.id} job={job} />
                 );
-            })}
-            
+            })}        
         </>
     );
 }
