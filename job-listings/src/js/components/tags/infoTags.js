@@ -3,18 +3,15 @@ import React from "react";
 import InfoTag from "./infoTag";
 
 const InfoTags = (props) => {
+  
     return (
         <>
-            {props.items.length > 0 ?
-                <>
-                    {props.items.map((item,index) => {
-                        return (
-                            <InfoTag key={index} item={item}/>
-                        )
-                    })}
-                </>
-            : ""}
-        </>
+            {props.items.map((item,index) => {            
+                return (
+                    <InfoTag key={index} item={item}/>
+                )
+            })}
+        </>       
     );
 }
 

@@ -58,7 +58,10 @@ const useStyles = makeStyles((themes) => ({
     color: "black", 
     fontWeight: "bold",  
     width: "100%", 
-    clear: "both"
+    clear: "both",
+    '&:hover': {
+      color: "#5BA4A4"
+   },
   },
   extraInfo: {
     marginBottom: "15px", 

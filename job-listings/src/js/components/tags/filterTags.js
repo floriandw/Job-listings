@@ -17,12 +17,14 @@ const FilterTags = () => {
             {filters.length > 0 ?
             
                 <Card elevation={0} className={classes.root}>
-                <FilterInfoTags items={filters}/>
-                <Link component="button"
+                    <FilterInfoTags items={filters}/>
+                    <Link alignItems="center"
+                            justify="center" component="button"
                         style={{ 
                             float:"right", 
                             alignContent:"center",
-                            color: "#5da5a4"
+                            color: "#5da5a4",
+                            
                         }}
                         onClick={() => {dispatch(clearFilterItems())}}
                     >

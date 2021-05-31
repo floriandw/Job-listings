@@ -1,15 +1,23 @@
-import React,{ useState } from 'react';
+import React,{ useState, useEffect } from 'react';
 
 import { useStyles } from '../../styles/jobCardStyle';
 import { Card, Avatar, Divider, CardContent, Typography  } from '@material-ui/core';
 import Tag from "../tags/tag";
 import InfoTags from "../tags/infoTags";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../store/actions/itemsActions";
+
 
 const JobCard = (props) => {
     const job = props.job
     const classes = useStyles();
     const [info] = useState([job.role, job.level, ...job.tools, ...job.languages]);
+    const dispatch = useDispatch()
 
+    useEffect(()=> {
+        dispatch(addItem([job.role, job.level, ...job.tools, ...job.languages]))
+    }, []);
+   
     return (
         <>
             <Card className={`${classes.root} ${job.featured ? classes.featured : ""}`} >
