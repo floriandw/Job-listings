@@ -27,6 +27,8 @@ const useStyles = makeStyles((themes) => ({
   avatar: {
     position:"relative",
     float:"left",
+    margin: "25px",
+    marginRight: "0px",
     //top: "50%",
     //margin: "auto",
     alignSelf:"center",
@@ -85,16 +87,22 @@ const useStyles = makeStyles((themes) => ({
   },
   divider: {
     display: "none",
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       display: "block",
     }
   },
   info: {
-    marginTop: "15px", 
-    display: "block",
+    marginTop: "0px", 
+    
     float: "right",
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
     [theme.breakpoints.down('md')]: {
-    float: "unset"
+    float: "unset",
+    display: "block",
+    height: "unset",
+    marginTop: "15px",
     },
   }
 }));

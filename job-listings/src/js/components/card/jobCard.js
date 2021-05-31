@@ -41,9 +41,9 @@ const JobCard = (props) => {
                     </Typography>
                 </div>
                 <Divider className={classes.divider} />
-                <Typography className={classes.info} component={'span'} >
+                <div className={classes.info} component={'span'} >
                     <InfoTags items={info}/>
-                </Typography>
+                </div>
             </CardContent>
         </Card>
         </>
