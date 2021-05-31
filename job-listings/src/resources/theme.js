@@ -1,5 +1,7 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
+import '../resources/fonts.css';
+
 export const theme = createMuiTheme({
     breakpoints: {
         values: {
@@ -25,6 +27,9 @@ export const theme = createMuiTheme({
         }
     },
     typography: {
+        fontFamily: "Spartan",
+        fontWeight: 500,
+        fontSize: "15px",
         useNextVariants: true,
         button: {
             fontWeight: 500,

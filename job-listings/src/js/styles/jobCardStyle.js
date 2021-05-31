@@ -59,6 +59,7 @@ const useStyles = makeStyles((themes) => ({
     fontWeight: "bold",  
     width: "100%", 
     clear: "both",
+    cursor: "pointer",
     '&:hover': {
       color: "#5BA4A4"
    },
