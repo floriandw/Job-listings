@@ -1,6 +1,6 @@
 import React from "react";
 
-import InfoTag from "./infoTag";
+import FilterInfoTag from "./filterInfoTag";
 
 const InfoTags = (props) => {
     return (
@@ -9,7 +9,7 @@ const InfoTags = (props) => {
                 <>
                     {props.items.map((item,index) => {
                         return (
-                            <InfoTag key={index} item={item}/>
+                            <FilterInfoTag key={index} item={item}/>
                         )
                     })}
                 </>

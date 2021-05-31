@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { Card,Link, Button } from "@material-ui/core";
-import InfoTags from "./infoTags";
+import FilterInfoTags from "./filterInfoTags";
 
 import { useStyles } from "../../styles/filterTagsStyle";
 import { clearFilterItems } from "../../store/actions/filterActions";
@@ -12,18 +12,18 @@ const FilterTags = () => {
     const filters = useSelector(state => state.filterItems)
     const classes = useStyles();
 
-    console.log(filters.length)
+    console.log(filters)
     return (
         <>
             {filters.length > 0 ?
             
                 <Card elevation={0} className={classes.root}>
-                    
-                <InfoTags items={filters}/>
+                <FilterInfoTags items={filters}/>
                 <Link component="button"
                         style={{ 
                             float:"right", 
-                            alignContent:"center"
+                            alignContent:"center",
+                            color: "#5da5a4"
                         }}
                         onClick={() => {dispatch(clearFilterItems())}}
                     >
