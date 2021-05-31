@@ -1,1 +1,2 @@
 export const ADD_FILTER_ITEM = "ADD_FILTER_ITEM";
+export const CLEAR_FILTERS = "CLEAR_FILTERS";

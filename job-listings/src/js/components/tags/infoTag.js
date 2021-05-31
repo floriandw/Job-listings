@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux'
 import { useSelector } from "react-redux";
 import { Card, } from "@material-ui/core";
 import { useStyles } from '../../styles/infoTagStyle';
-import { addShopItem } from "../../store/actions/filterActions"
+import { addFilterItem } from "../../store/actions/filterActions"
 
 
 const InfoTag = (props) => {
@@ -13,9 +13,9 @@ const InfoTag = (props) => {
    
     const addTagFilter= (props) => { 
         const name = props.item
-        dispatch(addShopItem(name))
+        dispatch(addFilterItem(name))
     }
-
+    //console.log(props.item)
     return (  
         <Card onClick={()=> {addTagFilter(props)}} elevation={0} className={classes.root} >
             {props.item}

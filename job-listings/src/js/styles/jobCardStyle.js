@@ -4,7 +4,7 @@ import { theme } from "../../resources/theme";
 
 const useStyles = makeStyles((themes) => ({
   root: {
-    boxShadow: "4px 5px 10px grey",
+    boxShadow: "4px 4px 10px lightgrey",
     margin: "10px",
     marginBottom: "40px",
     display: "flex",
