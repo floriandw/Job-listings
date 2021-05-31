@@ -1,0 +1,1 @@
+export const ADD_FILTER_ITEM = "ADD_FILTER_ITEM";
