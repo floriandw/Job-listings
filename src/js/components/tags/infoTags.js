@@ -6,11 +6,9 @@ const InfoTags = (props) => {
   
     return (
         <>
-            {props.items.map((item,index) => {            
-                return (
-                    <InfoTag key={index} item={item}/>
-                )
-            })}
+            {props.items.map((item,index) =>            
+                <InfoTag key={index} item={item}/>
+            )}
         </>       
     );
 }

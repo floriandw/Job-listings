@@ -6,9 +6,7 @@ const Header = () => {
     const classes = useStyles();
 
     return (
-        <>
-            <div className={classes.header}/>
-        </>
+        <div className={classes.header}/>
     )
 }
 

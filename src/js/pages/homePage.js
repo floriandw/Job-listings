@@ -10,11 +10,11 @@ const homePage = () => {
     return (
         <MuiThemeProvider theme={theme}>
             <CssBaseline />
-                <Header />
-                <Container style={{maxWidth: "1500px", minWidth: "400px"}}>
-                    <FilterTags />
-                    <JobCards />                  
-                </ Container>
+            <Header />
+            <Container style={{maxWidth: "1500px", minWidth: "400px"}}>
+                <FilterTags />
+                <JobCards />                  
+            </ Container>
         </MuiThemeProvider>
     )
 }
