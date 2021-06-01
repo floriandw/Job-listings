@@ -20,8 +20,7 @@ const JobCard = (props) => {
     return (
         <>
             <Card className={`${classes.root} ${job.featured ? classes.featured : ""}`} >
-            <Avatar src={job.logo} className={classes.avatar} alt="Remy Sharp"  />
-                {console.log(job.logo)}
+            <Avatar src={job.logo} className={classes.avatar} alt="Remy Sharp" />
                 <CardContent className={classes.content}>
                     <div className={classes.middle} >
                         <Typography className={classes.company}>
