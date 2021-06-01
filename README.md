@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://job-listings-deploy.herokuapp.com/?fbclid=IwAR2MNmY-UFnMxbfhXuHggmNA7FqGgwD5--0V-PTwjTMuD0flJn92U3nu5LM)
+- Live Site URL: (https://job-listings-deploy.herokuapp.com/)
 
 ## My process
 
