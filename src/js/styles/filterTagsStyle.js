@@ -8,7 +8,7 @@ const useStyles = makeStyles({
     padding: "10px",
     paddingRight: "75px",
     boxShadow: "4px 5px 10px lightgrey",
-    position: "relative"
+    position: "relative",
   },
   clear: {
     float:"right", 

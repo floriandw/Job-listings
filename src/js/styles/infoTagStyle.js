@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     fontWeight:"700",
     verticalAlign: "middle", 
     fontSize: "15px",
+    transition: "0.3s",
     cursor: "pointer",
     '&:hover': {
       backgroundColor: "#5BA4A4",
