@@ -22,6 +22,6 @@ const useStyles = makeStyles({
       color: "white"
    },
   }
-});
+}, {index: 1});
 
 export { useStyles };

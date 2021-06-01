@@ -23,6 +23,6 @@ const useStyles = makeStyles({
             backgroundImage: `url(${BgHeaderDesktop})`,
         },
     },
-});
+}, {index: 1});
 
 export { useStyles };

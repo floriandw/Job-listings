@@ -33,6 +33,6 @@ const useStyles = makeStyles({
     paddingRight:"10px", 
     paddingLeft:"10px"
   }
-});
+}, {index: 1});
 
 export { useStyles };

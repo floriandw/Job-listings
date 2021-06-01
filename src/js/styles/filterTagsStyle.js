@@ -20,6 +20,6 @@ const useStyles = makeStyles({
     fontWeight: "700",
     fontFamily: 'Spartan'
   }
-});
+}, {index: 1});
 
 export { useStyles };

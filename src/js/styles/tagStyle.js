@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((props) => ({
+const useStyles = makeStyles({
   root: {
     backgroundColor: props => props.name === "FEATURED" ? "black" : "#5da5a4" ,   
     borderBottomRightRadius:"15px 50%",
@@ -16,6 +16,6 @@ const useStyles = makeStyles((props) => ({
     fontSize: "15px",
     paddingTop: "10px"
   }
-}));
+}, {index: 1});
 
 export { useStyles };

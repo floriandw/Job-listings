@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { theme } from "../../resources/theme";
 
-const useStyles = makeStyles((themes) => ({
+const useStyles = makeStyles({
   root: {
     boxShadow: "4px 4px 10px lightgrey",
     margin: "10px",
@@ -86,6 +86,6 @@ const useStyles = makeStyles((themes) => ({
     marginTop: "15px",
     },
   }
-}));
+}, {index: 1});
 
 export { useStyles };
