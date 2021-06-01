@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from 'react-redux'
+import { Card } from "@material-ui/core";
 
-import { Card, } from "@material-ui/core";
 import { useStyles } from '../../styles/infoTagStyle';
 import { addFilterItem } from "../../store/actions/filterActions"
 

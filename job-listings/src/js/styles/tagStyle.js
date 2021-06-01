@@ -14,6 +14,7 @@ const useStyles = makeStyles((props) => ({
     margin: "5px", 
     fontWeight:"700", 
     fontSize: "15px",
+    paddingTop: "10px"
   }
 }));
 

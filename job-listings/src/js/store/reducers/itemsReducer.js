@@ -1,5 +1,3 @@
-
-//const data = require("../../../resources/data.json"); 
 const initialState = [];
 
 const itemsReducer = (state = initialState, action) => {

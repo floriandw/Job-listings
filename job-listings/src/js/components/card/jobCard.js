@@ -1,14 +1,11 @@
 import React,{ useState, useEffect } from 'react';
 
 import { useStyles } from '../../styles/jobCardStyle';
-import { Card, Avatar, Divider, CardContent, Typography  } from '@material-ui/core';
+import { Card, Avatar, Divider, CardContent, Typography } from '@material-ui/core';
 import Tag from "../tags/tag";
 import InfoTags from "../tags/infoTags";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../store/actions/itemsActions";
-import img from "./images/shortly.svg"
-import convert from 'convert-svg-react'
-
 
 const JobCard = (props) => {
     const job = props.job
@@ -16,25 +13,14 @@ const JobCard = (props) => {
     const [info] = useState([job.role, job.level, ...job.tools, ...job.languages]);
     const dispatch = useDispatch()
     
-    
     useEffect(()=> {
         dispatch(addItem([job.role, job.level, ...job.tools, ...job.languages]))
-       
     }, []);
-    //const img = "./images.shortly.svg"
-    console.log(job.logo);
 
-    
-
-    const logo = job.logo
-    
-    
-    
     return (
         <>
             <Card className={`${classes.root} ${job.featured ? classes.featured : ""}`} >
-            
-            <Avatar src="./images/manage.svg" className={classes.avatar} alt="Remy Sharp"  />
+            <Avatar src={job.logo} className={classes.avatar} alt="Remy Sharp"  />
                 {console.log(job.logo)}
                 <CardContent className={classes.content}>
                     <div className={classes.middle} >

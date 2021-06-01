@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from 'react-redux'
-
 import { Card, Container } from "@material-ui/core";
+
 import { useStyles } from '../../styles/filterInfoTagStyle';
 import { removeFilterItem } from "../../store/actions/filterActions";
 import CloseIcon from '@material-ui/icons/Close';

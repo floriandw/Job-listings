@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Card } from "@material-ui/core";
+
 import { useStyles } from "../../styles/tagStyle";
 
 const Tag = (props) => {

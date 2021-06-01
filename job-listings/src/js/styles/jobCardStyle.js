@@ -36,7 +36,6 @@ const useStyles = makeStyles((themes) => ({
       alignSelf:"normal",
       zIndex:"1", 
       marginTop: "-25px",
-      left: "46px",
       height: '50px', width: '50px',
     },
   },

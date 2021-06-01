@@ -7,9 +7,18 @@ const useStyles = makeStyles({
     marginBottom: "-40px",
     padding: "10px",
     paddingRight: "75px",
-    
     boxShadow: "4px 5px 10px lightgrey",
     position: "relative"
+  },
+  clear: {
+    float:"right", 
+    alignContent:"center",
+    color: "#5da5a4",
+    right: "30px",
+    top: "27px",
+    position:"absolute",
+    fontWeight: "700",
+    fontFamily: 'Spartan'
   }
 });
 

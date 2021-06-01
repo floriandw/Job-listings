@@ -19,7 +19,6 @@ const useStyles = makeStyles({
         height: "150px",
         marginBottom: "40px",
         backgroundImage: `url(${BgHeaderMobile})`,
-
         ["@media (min-width:800px)"]: { // eslint-disable-line no-useless-computed-key
             backgroundImage: `url(${BgHeaderDesktop})`,
         },
